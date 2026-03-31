@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.map-wrapper {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.base-map {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.markers-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.marker {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="15" y="35" width="70" height="45" fill="%23FFD700" stroke="%23DAA520" stroke-width="3" rx="3"/><rect x="15" y="20" width="70" height="20" fill="%23FFF44F" stroke="%23DAA520" stroke-width="2" rx="2"/><rect x="20" y="25" width="60" height="3" fill="%23DAA520"/><circle cx="50" cy="45" r="6" fill="%23DAA520"/><polygon points="50,30 55,40 50,50 45,40" fill="%23FF6B6B"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: transparent;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+.marker:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+}
+
+/* モーダル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+#detailTitle {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#detailDescription {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .map-container {
+        margin-bottom: 20px;
+    }
+    
+    .marker {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+        padding: 20px;
+    }
+}

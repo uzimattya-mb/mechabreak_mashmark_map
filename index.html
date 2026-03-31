@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechaBreak MashMark Map</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MechaBreak MashMark Map</h1>
+        
+        <div class="map-container">
+            <div class="map-wrapper">
+                <img id="baseMap" src="images/base-map.jpg" alt="Base Map" class="base-map">
+                <div id="markersContainer" class="markers-container"></div>
+            </div>
+        </div>
+
+        <!-- 詳細画像モーダル -->
+        <div id="detailModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="detailTitle"></h2>
+                <img id="detailImage" src="" alt="Detail Image" class="detail-image">
+                <p id="detailDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/map.js"></script>
+</body>
+</html>

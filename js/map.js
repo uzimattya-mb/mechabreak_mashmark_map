@@ -35,7 +35,7 @@ const markers = [
     { id: 8, x: 23, y: 77, title: "廃工場", image: "images/details/detail-8.jpg" },
     { id: 9, x: 51, y: 83, title: "サウスウッド", image: "images/details/detail-9.jpg" },
     { id: 10, x: 74, y: 88, title: "南投空港", image: "images/details/detail-10.jpg" },
-    { id: 11, x: 83, y: 86, title: "芯石精錬所（まだ画像なし）", image: "images/details/detail-11.jpg" },
+    { id: 11, x: 83, y: 86, title: "芯石精錬所", image: "images/details/detail-11.jpg" },
     { id: 12, x: 92, y: 69, title: "鉄錆の波止場", image: "images/details/detail-12.jpg" },
     { id: 13, x: 91, y: 39, title: "日の出海岸", image: "images/details/detail-13.jpg" },
     { id: 14, x: 94, y: 9, title: "飛び坂の島", image: "images/details/detail-14.jpg" },

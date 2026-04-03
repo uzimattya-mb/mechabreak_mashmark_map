@@ -38,7 +38,7 @@ h1 {
 
 .base-map {
     display: block;
-    max-width: 150%;
+    max-width: auto;
     height: auto;
 }
 

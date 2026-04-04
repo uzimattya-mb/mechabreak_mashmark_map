@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MechaBreak MashMark Map</title>
+    <title>MechaBREAK Map - Locations</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>MechaBreak MashMark Map</h1>
-        
+        <!-- コントロールパネル
+        <div class="control-panel">
+            <h2>マーカー表示設定</h2>
+            <div class="control-buttons">
+                <button class="control-btn on" id="btn-goldenbox" onclick="toggleMarkerVisibility('goldenbox')" data-type="goldenbox">
+                    <span class="btn-icon goldenbox-icon"></span>
+                    <span class="btn-label">ゴールデンボックス</span>
+                </button>
+                <button class="control-btn on" id="btn-rzk1" onclick="toggleMarkerVisibility('rzk1')" data-type="rzk1">
+                    <span class="btn-icon rzk1-icon"></span>
+                    <span class="btn-label">RestrictedZoneKey1</span>
+                </button>
+                <button class="control-btn on" id="btn-rzk2" onclick="toggleMarkerVisibility('rzk2')" data-type="rzk2">
+                    <span class="btn-icon rzk2-icon"></span>
+                    <span class="btn-label">RestrictedZoneKey2</span>
+                </button>
+                <button class="control-btn on" id="btn-rzk3" onclick="toggleMarkerVisibility('rzk3')" data-type="rzk3">
+                    <span class="btn-icon rzk3-icon"></span>
+                    <span class="btn-label">RestrictedZoneKey3</span>
+                </button>
+            </div>
+        </div> -->
+        <!-- マップ -->
         <div class="map-container">
-            <div class="map-wrapper">
-                <img id="baseMap" src="images/base-map.jpg" alt="Base Map" class="base-map">
-                <div id="markersContainer" class="markers-container"></div>
-            </div>
+            <img id="baseMap" src="images/base-map.jpg" alt="Base Map" class="base-map">
+            <svg id="connectionsSvg" class="connections-svg"></svg>
+            <div id="markersContainer" class="markers-container"></div>
         </div>
+    </div>
 
-        <!-- 詳細画像モーダル -->
-        <div id="detailModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2 id="detailTitle"></h2>
-                <img id="detailImage" src="" alt="Detail Image" class="detail-image">
-                <p id="detailDescription"></p>
-            </div>
+    <!-- モーダル -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="detailTitle"></h2>
+            <img id="detailImage" src="" alt="Detail Image" class="detail-image">
+            <p id="detailDescription"></p>
         </div>
     </div>
 

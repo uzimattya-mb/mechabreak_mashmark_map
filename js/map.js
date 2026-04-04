@@ -1,93 +1,236 @@
-// マーカー定義（22個のGoldenBox）
-// const markers = [
-//     { id: 1, x: 16, y: 20, title: "GoldenBox_01", description: "GoldenBox_01 - ここは最初のポイントです", image: "images/details/detail-1.jpg" },
-//     { id: 2, x: 23, y: 14, title: "GoldenBox_02", description: "GoldenBox_02 - 2番目のポイントです", image: "images/details/detail-2.jpg" },
-//     { id: 3, x: 28, y: 28, title: "GoldenBox_03", description: "GoldenBox_03 - 3番目のポイントです", image: "images/details/detail-3.jpg" },
-//     { id: 4, x: 12, y: 41, title: "GoldenBox_04", description: "GoldenBox_04 - 4番目のポイントです", image: "images/details/detail-4.jpg" },
-//     { id: 5, x: 2, y: 55, title: "GoldenBox_05", description: "GoldenBox_05 - 5番目のポイントです", image: "images/details/detail-5.jpg" },
-//     { id: 6, x: 14, y: 59, title: "GoldenBox_06", description: "GoldenBox_06 - 6番目のポイントです", image: "images/details/detail-6.jpg" },
-//     { id: 7, x: 18, y: 67, title: "GoldenBox_07", description: "GoldenBox_07 - 7番目のポイントです", image: "images/details/detail-7.jpg" },
-//     { id: 8, x: 25, y: 77, title: "GoldenBox_08", description: "GoldenBox_08 - 8番目のポイントです", image: "images/details/detail-8.jpg" },
-//     { id: 9, x: 51, y: 82, title: "GoldenBox_09", description: "GoldenBox_09 - 9番目のポイントです", image: "images/details/detail-9.jpg" },
-//     { id: 10, x: 73, y: 88, title: "GoldenBox_10", description: "GoldenBox_10 - 10番目のポイントです", image: "images/details/detail-10.jpg" },
-//     { id: 11, x: 83, y: 86, title: "GoldenBox_11", description: "GoldenBox_11 - 11番目のポイントです", image: "images/details/detail-11.jpg" },
-//     { id: 12, x: 90, y: 69, title: "GoldenBox_12", description: "GoldenBox_12 - 12番目のポイントです", image: "images/details/detail-12.jpg" },
-//     { id: 13, x: 89, y: 39, title: "GoldenBox_13", description: "GoldenBox_13 - 13番目のポイントです", image: "images/details/detail-13.jpg" },
-//     { id: 14, x: 92, y: 12, title: "GoldenBox_14", description: "GoldenBox_14 - 14番目のポイントです", image: "images/details/detail-14.jpg" },
-//     { id: 15, x: 85, y: 24, title: "GoldenBox_15", description: "GoldenBox_15 - 15番目のポイントです", image: "images/details/detail-15.jpg" },
-//     { id: 16, x: 79, y: 24, title: "GoldenBox_16", description: "GoldenBox_16 - 16番目のポイントです", image: "images/details/detail-16.jpg" },
-//     { id: 17, x: 78, y: 19, title: "GoldenBox_17", description: "GoldenBox_17 - 17番目のポイントです", image: "images/details/detail-17.jpg" },
-//     { id: 18, x: 71, y: 27, title: "GoldenBox_18", description: "GoldenBox_18 - 18番目のポイントです", image: "images/details/detail-18.jpg" },
-//     { id: 19, x: 62, y: 16, title: "GoldenBox_19", description: "GoldenBox_19 - 19番目のポイントです", image: "images/details/detail-19.jpg" },
-//     { id: 20, x: 57, y: 16, title: "GoldenBox_20", description: "GoldenBox_20 - 20番目のポイントです", image: "images/details/detail-20.jpg" },
-//     { id: 21, x: 53, y: 5, title: "GoldenBox_21", description: "GoldenBox_21 - 21番目のポイントです", image: "images/details/detail-21.jpg" }
-//     // { id: 22, x: 50, y: 40, title: "GoldenBox_22", description: "GoldenBox_22 - 22番目のポイントです", image: "images/details/detail-22.jpg" }
-// ];
-
-const markers = [
+// ゴールデンボックスマーカー
+const goldenBoxMarkers = [
     { id: 1, x: 14, y: 18, title: "ダストロック基地", image: "images/details/detail-1.jpg" },
     { id: 2, x: 19, y: 11, title: "インパクト・ゾーン", image: "images/details/detail-2.jpg" },
     { id: 3, x: 28, y: 28, title: "サンドダスト庇護所（まだ画像なし）", image: "images/details/detail-3.jpg" },
     { id: 4, x: 10, y: 40, title: "太陽の岩", image: "images/details/detail-4.jpg" },
     { id: 5, x: 2, y: 55, title: "石湾基地", image: "images/details/detail-5.jpg" },
     { id: 6, x: 12, y: 58, title: "星の岩礁外", image: "images/details/detail-6.jpg" },
-    { id: 7, x: 16, y: 65, title: "星の岩礁室内",image: "images/details/detail-7.jpg" },
+    { id: 7, x: 15, y: 65, title: "星の岩礁室内", image: "images/details/detail-7.jpg" },
     { id: 8, x: 23, y: 77, title: "廃工場", image: "images/details/detail-8.jpg" },
     { id: 9, x: 51, y: 83, title: "サウスウッド", image: "images/details/detail-9.jpg" },
-    { id: 10, x: 74, y: 88, title: "南投空港", image: "images/details/detail-10.jpg" },
+    { id: 10, x: 74, y: 91, title: "南投空港", image: "images/details/detail-10.jpg" },
     { id: 11, x: 83, y: 86, title: "芯石精錬所", image: "images/details/detail-11.jpg" },
     { id: 12, x: 92, y: 69, title: "鉄錆の波止場", image: "images/details/detail-12.jpg" },
     { id: 13, x: 91, y: 39, title: "日の出海岸", image: "images/details/detail-13.jpg" },
     { id: 14, x: 94, y: 9, title: "飛び坂の島", image: "images/details/detail-14.jpg" },
     { id: 15, x: 86, y: 23, title: "中継前哨基地（まだ画像なし）", image: "images/details/detail-15.jpg" },
-    { id: 16, x: 80, y: 22, title: "中継前哨基地室内", image: "images/details/detail-16.jpg" },
-    { id: 17, x: 79, y: 17, title: "中継前哨基地北側", image: "images/details/detail-17.jpg" },
-    { id: 18, x: 71, y: 25, title: "中継前哨基地西側（まだ画像なし）", image: "images/details/detail-18.jpg" },
-    { id: 19, x: 62, y: 14, title: "森の要塞東側（まだ画像なし）", image: "images/details/detail-19.jpg" },
-    { id: 20, x: 57, y: 14, title: "森の要塞西側", image: "images/details/detail-20.jpg" },
+    { id: 16, x: 81, y: 21, title: "中継前哨基地室内", image: "images/details/detail-16.jpg" },
+    { id: 17, x: 78, y: 16, title: "中継前哨基地北側", image: "images/details/detail-17.jpg" },
+    { id: 20, x: 57, y: 14, title: "森の要塞", image: "images/details/detail-20.jpg" },
     { id: 21, x: 53, y: 53, title: "巨大カルデラ（まだ画像なし）", image: "images/details/detail-21.jpg" }
-    // { id: 22, x: 50, y: 40, title: "GoldenBox_22", image: "images/details/detail-22.jpg" }
 ];
 
-// DOM要素取得
-const markersContainer = document.getElementById('markersContainer');
-const detailModal = document.getElementById('detailModal');
-const closeBtn = document.querySelector('.close');
+// RestrictedZoneKey1 マーカー（青）
+const restrictedZoneKey1Markers = [
+    { id: 'RZK1_1a', x: 26, y: 6, title: "RZK1_1a", type: "rzk1", pair: "RZK1_1b" },
+    { id: 'RZK1_1b', x: 62, y: 14, title: "RZK1_1b", type: "rzk1", pair: "RZK1_1a" },
+    { id: 'RZK1_2a', x: 10, y: 54, title: "RZK1_2a", type: "rzk1", pair: "RZK1_2b" },
+    { id: 'RZK1_2b', x: 91, y: 12, title: "RZK1_2b", type: "rzk1", pair: "RZK1_2a" },
+    { id: 'RZK1_3a', x: 15, y: 68, title: "RZK1_3a", type: "rzk1", pair: "RZK1_3b" },
+    { id: 'RZK1_3b', x: 85, y: 89, title: "RZK1_3b", type: "rzk1", pair: "RZK1_3a" },
+];
+
+// RestrictedZoneKey2 マーカー（紫）
+const restrictedZoneKey2Markers = [
+    { id: 'RZK2_1a', x: 13, y: 11, title: "RZK2_1a", type: "rzk2", pair: "RZK2_1b" },
+    { id: 'RZK2_1b', x: 40, y: 90, title: "RZK2_1b", type: "rzk2", pair: "RZK2_1a" },
+    { id: 'RZK2_2a', x: 14, y: 86, title: "RZK2_2a", type: "rzk2", pair: "RZK2_2b" },
+    { id: 'RZK2_2b', x: 56, y: 57, title: "RZK2_2b", type: "rzk2", pair: "RZK2_2a" },
+    { id: 'RZK2_3a', x: 38, y: 73, title: "RZK2_3a", type: "rzk2", pair: "RZK2_3b" },
+    { id: 'RZK2_3b', x: 41, y: 21, title: "RZK2_3b", type: "rzk2", pair: "RZK2_3a" },
+    { id: 'RZK2_4a', x: 29, y: 66, title: "RZK2_4a", type: "rzk2", pair: "RZK2_4b" },
+    { id: 'RZK2_4b', x: 90, y: 57, title: "RZK2_4b", type: "rzk2", pair: "RZK2_4a" },
+];
+
+// RestrictedZoneKey3 マーカー（黄色）
+const restrictedZoneKey3Markers = [
+    { id: 'RZK3_1a', x: 74, y: 87, title: "RZK3_1a", type: "rzk3", pair: "RZK3_1b" },
+    { id: 'RZK3_1b', x: 78, y: 20, title: "RZK3_1b", type: "rzk3", pair: "RZK3_1a" },
+    { id: 'RZK3_2a', x: 22, y: 83, title: "RZK3_2a", type: "rzk3", pair: "RZK3_2b" },
+    { id: 'RZK3_2b', x: 86, y: 42, title: "RZK3_2b", type: "rzk3", pair: "RZK3_2a" },
+];
+
+// ON/OFF 管理
+const markerVisibility = {
+    goldenbox: true,
+    rzk1: true,
+    rzk2: true,
+    rzk3: true,
+};
+
+// DOM 要素
 const baseMap = document.getElementById('baseMap');
+const markersContainer = document.getElementById('markersContainer');
+const modal = document.getElementById('detailModal');
+const detailTitle = document.getElementById('detailTitle');
+const detailImage = document.getElementById('detailImage');
+const detailDescription = document.getElementById('detailDescription');
+const closeBtn = document.querySelector('.close');
+
+// SVG キャンバス（点線用）
+const svg = document.getElementById('connectionsSvg');
 
 // マーカー作成
 function createMarkers() {
-    markers.forEach(marker => {
-        const markerElement = document.createElement('div');
-        markerElement.className = 'marker';
-        markerElement.style.left = marker.x + '%';
-        markerElement.style.top = marker.y + '%';
-        markerElement.textContent = marker.id;
-        markerElement.addEventListener('click', () => showDetail(marker));
-        markersContainer.appendChild(markerElement);
+    goldenBoxMarkers.forEach(marker => {
+        createMarker(marker, 'goldenbox', '#FFD700');
+    });
+
+    restrictedZoneKey1Markers.forEach(marker => {
+        createMarker(marker, 'rzk1', '#4A90E2');
+    });
+
+    restrictedZoneKey2Markers.forEach(marker => {
+        createMarker(marker, 'rzk2', '#9B59B6');
+    });
+
+    restrictedZoneKey3Markers.forEach(marker => {
+        createMarker(marker, 'rzk3', '#FFD700');
+    });
+
+    drawConnections();
+}
+
+// 個別マーカー作成（アイコン版）
+function createMarker(marker, type, color) {
+    const markerElement = document.createElement('div');
+    markerElement.className = 'marker';
+    markerElement.classList.add(`marker-${type}`);
+    markerElement.style.left = marker.x + '%';
+    markerElement.style.top = marker.y + '%';
+    
+    if (type.startsWith('rzk')) {
+    // RZK用のアイコン画像を設定
+    const iconMap = {
+        'rzk1': 'images/rzk1-icon.png',
+        'rzk2': 'images/rzk2-icon.png',
+        'rzk3': 'images/rzk3-icon.png'
+    };
+    
+    markerElement.style.backgroundImage = `url('${iconMap[type]}')`;
+    markerElement.style.backgroundSize = 'contain';
+    markerElement.style.backgroundRepeat = 'no-repeat';
+    markerElement.style.backgroundPosition = 'center';
+    markerElement.style.backgroundColor = 'transparent';
+    markerElement.style.border = 'none';
+    markerElement.textContent = '';
+} else {
+    // GoldenBox は宝箱アイコンを表示
+    markerElement.style.backgroundImage = `url('images/goldenbox-icon.jpg')`;
+    markerElement.style.backgroundSize = 'contain';
+    markerElement.style.backgroundRepeat = 'no-repeat';
+    markerElement.style.backgroundPosition = 'center';
+    markerElement.style.backgroundColor = 'transparent';
+    markerElement.style.border = 'none';
+    markerElement.textContent = '';
+}
+    
+    markerElement.dataset.type = type;
+    markerElement.dataset.id = marker.id;
+
+    markerElement.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (markerVisibility[type]) {
+            showDetail(marker, type);
+        }
+    });
+
+    markersContainer.appendChild(markerElement);
+}
+
+// 点線を描画
+function drawConnections() {
+    const allMarkers = [
+        ...restrictedZoneKey1Markers,
+        ...restrictedZoneKey2Markers,
+        ...restrictedZoneKey3Markers,
+    ];
+
+    const drawnPairs = new Set();
+
+    allMarkers.forEach(marker => {
+        if (!marker.pair || drawnPairs.has(marker.id)) return;
+
+        const pairMarker = allMarkers.find(m => m.id === marker.pair);
+        if (!pairMarker) return;
+
+        let color = '#FFD700';
+        if (marker.type === 'rzk1') color = '#4A90E2';
+        if (marker.type === 'rzk2') color = '#9B59B6';
+        if (marker.type === 'rzk3') color = '#FFD700';
+
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', marker.x + '%');
+        line.setAttribute('y1', marker.y + '%');
+        line.setAttribute('x2', pairMarker.x + '%');
+        line.setAttribute('y2', pairMarker.y + '%');
+        line.setAttribute('stroke', color);
+        line.setAttribute('stroke-width', '2');
+        line.setAttribute('stroke-dasharray', '5,5');
+        line.classList.add(`line-${marker.type}`);
+        line.dataset.type = marker.type;
+
+        svg.appendChild(line);
+
+        drawnPairs.add(marker.id);
+        drawnPairs.add(pairMarker.id);
     });
 }
 
-// 詳細表示
-function showDetail(marker) {
-    document.getElementById('detailTitle').textContent = marker.title;
-    document.getElementById('detailImage').src = marker.image;
-    document.getElementById('detailDescription').textContent = marker.description;
-    detailModal.style.display = 'block';
+// 詳細を表示
+function showDetail(marker, type) {
+    detailTitle.textContent = marker.title;
+    detailImage.src = marker.image || `images/details/${marker.id}.jpg`;
+    detailDescription.textContent = marker.description || '';
+    modal.style.display = 'block';
 }
 
 // モーダルを閉じる
 function closeModal() {
-    detailModal.style.display = 'none';
+    modal.style.display = 'none';
 }
 
-// イベントリスナー
 closeBtn.addEventListener('click', closeModal);
+
 window.addEventListener('click', (event) => {
-    if (event.target === detailModal) {
+    if (event.target === modal) {
         closeModal();
     }
 });
 
-// 初期化
-document.addEventListener('DOMContentLoaded', createMarkers);
+// ON/OFF 切り替え関数（修正版）
+function toggleMarkerVisibility(type) {
+    markerVisibility[type] = !markerVisibility[type];
+
+    const button = document.querySelector(`.control-btn[data-type="${type}"]`);
+
+    // マーカーの表示/非表示
+    document.querySelectorAll(`.marker-${type}`).forEach(marker => {
+        marker.style.display = markerVisibility[type] ? 'flex' : 'none';
+    });
+
+    // 点線の表示/非表示
+    document.querySelectorAll(`.line-${type}`).forEach(line => {
+        line.style.visibility = markerVisibility[type] ? 'visible' : 'hidden';
+    });
+
+    // ボタンのクラスを更新
+    if (markerVisibility[type]) {
+        button.classList.remove('off');
+        button.classList.add('on');
+    } else {
+        button.classList.remove('on');
+        button.classList.add('off');
+    }
+}
+
+// ページロード時に実行
+document.addEventListener('DOMContentLoaded', () => {
+    createMarkers();
+
+    // 初期状態：全て ON にする
+    document.querySelectorAll('.control-btn').forEach(button => {
+        button.classList.add('on');
+    });
+});

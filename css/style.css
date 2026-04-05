@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -151,8 +151,8 @@ body {
 /* マーカー基本スタイル */
 .marker {
     position: absolute;
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     border: 2px solid;
     cursor: pointer;
     display: flex;

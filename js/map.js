@@ -23,12 +23,12 @@ const goldenBoxMarkers = [
 
 // RestrictedZoneKey1 マーカー（青）
 const restrictedZoneKey1Markers = [
-    { id: 'RZK1_1a', x: 26, y: 6, title: "RZK1_1a", type: "rzk1", pair: "RZK1_1b" },
-    { id: 'RZK1_1b', x: 62, y: 14, title: "RZK1_1b", type: "rzk1", pair: "RZK1_1a" },
-    { id: 'RZK1_2a', x: 10, y: 54, title: "RZK1_2a", type: "rzk1", pair: "RZK1_2b" },
-    { id: 'RZK1_2b', x: 91, y: 12, title: "RZK1_2b", type: "rzk1", pair: "RZK1_2a" },
-    { id: 'RZK1_3a', x: 15, y: 68, title: "RZK1_3a", type: "rzk1", pair: "RZK1_3b" },
-    { id: 'RZK1_3b', x: 85, y: 89, title: "RZK1_3b", type: "rzk1", pair: "RZK1_3a" },
+    { id: 'RZK1_1a', x: 26, y: 6, title: "輸送車護送", type: "rzk1", pair: "RZK1_1b" },
+    { id: 'RZK1_1b', x: 62, y: 14, title: "輸送車護送", type: "rzk1", pair: "RZK1_1a" },
+    { id: 'RZK1_2a', x: 10, y: 54, title: "ステルス30機撃破", type: "rzk1", pair: "RZK1_2b" },
+    { id: 'RZK1_2b', x: 91, y: 12, title: "ステルス30機撃破", type: "rzk1", pair: "RZK1_2a" },
+    { id: 'RZK1_3a', x: 15, y: 68, title: "EICタンク30個破壊", type: "rzk1", pair: "RZK1_3b" },
+    { id: 'RZK1_3b', x: 85, y: 89, title: "EICタンク30個破壊", type: "rzk1", pair: "RZK1_3a" },
 ];
 
 // RestrictedZoneKey2 マーカー（紫）
@@ -45,10 +45,10 @@ const restrictedZoneKey2Markers = [
 
 // RestrictedZoneKey3 マーカー（黄色）
 const restrictedZoneKey3Markers = [
-    { id: 'RZK3_1a', x: 74, y: 87, title: "RZK3_1a", type: "rzk3", pair: "RZK3_1b" },
-    { id: 'RZK3_1b', x: 78, y: 20, title: "RZK3_1b", type: "rzk3", pair: "RZK3_1a" },
-    { id: 'RZK3_2a', x: 22, y: 83, title: "RZK3_2a", type: "rzk3", pair: "RZK3_2b" },
-    { id: 'RZK3_2b', x: 86, y: 42, title: "RZK3_2b", type: "rzk3", pair: "RZK3_2a" },
+    { id: 'RZK3_1a', x: 74, y: 87, title: "ヘルキャット", type: "rzk3", pair: "RZK3_1b" },
+    { id: 'RZK3_1b', x: 78, y: 20, title: "ヘルキャット", type: "rzk3", pair: "RZK3_1a" },
+    { id: 'RZK3_2a', x: 22, y: 83, title: "モレーナ", type: "rzk3", pair: "RZK3_2b" },
+    { id: 'RZK3_2b', x: 86, y: 42, title: "モレーナ", type: "rzk3", pair: "RZK3_2a" },
 ];
 
 // ON/OFF 管理

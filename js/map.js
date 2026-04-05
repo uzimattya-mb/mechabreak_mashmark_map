@@ -33,14 +33,14 @@ const restrictedZoneKey1Markers = [
 
 // RestrictedZoneKey2 マーカー（紫）
 const restrictedZoneKey2Markers = [
-    { id: 'RZK2_1a', x: 13, y: 11, title: "RZK2_1a", type: "rzk2", pair: "RZK2_1b" },
-    { id: 'RZK2_1b', x: 40, y: 90, title: "RZK2_1b", type: "rzk2", pair: "RZK2_1a" },
-    { id: 'RZK2_2a', x: 14, y: 86, title: "RZK2_2a", type: "rzk2", pair: "RZK2_2b" },
-    { id: 'RZK2_2b', x: 56, y: 57, title: "RZK2_2b", type: "rzk2", pair: "RZK2_2a" },
-    { id: 'RZK2_3a', x: 38, y: 73, title: "RZK2_3a", type: "rzk2", pair: "RZK2_3b" },
-    { id: 'RZK2_3b', x: 41, y: 21, title: "RZK2_3b", type: "rzk2", pair: "RZK2_3a" },
-    { id: 'RZK2_4a', x: 29, y: 66, title: "RZK2_4a", type: "rzk2", pair: "RZK2_4b" },
-    { id: 'RZK2_4b', x: 90, y: 57, title: "RZK2_4b", type: "rzk2", pair: "RZK2_4a" },
+    { id: 'RZK2_1a', x: 13, y: 11, title: "EICピットコア3基破壊", type: "rzk2", pair: "RZK2_1b" },
+    { id: 'RZK2_1b', x: 40, y: 90, title: "EICピットコア3基破壊", type: "rzk2", pair: "RZK2_1a" },
+    { id: 'RZK2_2a', x: 14, y: 86, title: "80機撃破", type: "rzk2", pair: "RZK2_2b" },
+    { id: 'RZK2_2b', x: 56, y: 57, title: "80機撃破", type: "rzk2", pair: "RZK2_2a" },
+    { id: 'RZK2_3a', x: 38, y: 73, title: "地層破壊マシン解体", type: "rzk2", pair: "RZK2_3b" },
+    { id: 'RZK2_3b', x: 41, y: 21, title: "地層破壊マシン解体", type: "rzk2", pair: "RZK2_3a" },
+    { id: 'RZK2_4a', x: 29, y: 66, title: "護衛艦5隻破壊", type: "rzk2", pair: "RZK2_4b" },
+    { id: 'RZK2_4b', x: 90, y: 57, title: "護衛艦5隻破壊", type: "rzk2", pair: "RZK2_4a" },
 ];
 
 // RestrictedZoneKey3 マーカー（黄色）

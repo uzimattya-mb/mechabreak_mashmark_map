@@ -18,7 +18,7 @@ body {
 /* コントロールパネル */
 .control-panel {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -40,38 +40,40 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    padding: 12px;
+    gap: 0;
+    padding: 8px;
     border: 3px solid #ddd;
     border-radius: 8px;
     background-color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 120px;
+    width: 60px;  /* 追加：固定幅 */
+    height: 60px;  /* 追加：固定高さ */
+    justify-content: center;  /* 追加：縦方向中央 */
 }
 
 .btn-icon {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .btn-icon.goldenbox-icon {
-    background-image: url('images/goldenbox-icon.jpg');
+    background-image: url('../images/goldenbox-icon.jpg');
 }
 
 .btn-icon.rzk1-icon {
-    background-image: url('images/rzk1-icon.png');
+    background-image: url('../images/rzk1-icon.png');
 }
 
 .btn-icon.rzk2-icon {
-    background-image: url('images/rzk2-icon.png');
+    background-image: url('../images/rzk2-icon.png');
 }
 
 .btn-icon.rzk3-icon {
-    background-image: url('images/rzk3-icon.png');
+    background-image: url('../images/rzk3-icon.png');
 }
 
 .btn-label {
@@ -80,6 +82,7 @@ body {
     color: #333;
     text-align: center;
     line-height: 1.2;
+    display: none;
 }
 
 /* ON状態 */
@@ -243,28 +246,17 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* .modal-content {
-    background-color: white;
-    margin: 5% auto;
-    padding: 30px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 1000px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    animation: slideDown 0.3s ease;
-} */
-
 .modal-content {
     background-color: white;
-    margin: 2% auto;  /* 5% → 3% で上下の余白を減らす */
-    padding: 15px;   /* 30px → 20px で左右の余白を減らす */
+    margin: 5% auto;
+    padding: 15px;
     border-radius: 8px;
-    width: 97%;      /* 90% → 95% でより大きく */
-    max-width: 1300px;  /* 1000px → 1200px で最大幅を広げる */
+    width: 97%; 
+    max-width: 800px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     animation: slideDown 0.3s ease;
-    max-height: 90vh;  /* 追加：モーダルの最大高さ */
-    overflow-y: auto;   /* 追加：内容が長い場合スクロール */
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 @keyframes slideDown {
@@ -295,7 +287,7 @@ body {
 #detailTitle {
     margin-bottom: 15px;
     color: #333;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .detail-image {
@@ -320,8 +312,8 @@ body {
     }
     
     .marker {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
         font-size: 8px;
     }
     
@@ -336,16 +328,31 @@ body {
     }
 
     .control-btn {
-        min-width: 100px;
+        min-width: 50px;
         padding: 10px;
     }
 
     .btn-icon {
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 25px;
     }
 
     .btn-label {
         font-size: 11px;
+    }
+
+    #detailTitle {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 16px;
+    }
+
+    .detail-image {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 15px;
     }
 }

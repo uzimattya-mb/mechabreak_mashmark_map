@@ -8,14 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <!-- コントロールパネル
+        <!-- マップ -->
+        <div class="map-container">
+            <img id="baseMap" src="images/base-map.jpg" alt="Base Map" class="base-map">
+            <svg id="connectionsSvg" class="connections-svg"></svg>
+            <div id="markersContainer" class="markers-container"></div>
+        </div>
+        <!-- コントロールパネル -->
         <div class="control-panel">
-            <h2>マーカー表示設定</h2>
+            <!-- <h2>マーカー表示設定</h2> -->
             <div class="control-buttons">
-                <button class="control-btn on" id="btn-goldenbox" onclick="toggleMarkerVisibility('goldenbox')" data-type="goldenbox">
+                <!-- <button class="control-btn on" id="btn-goldenbox" onclick="toggleMarkerVisibility('goldenbox')" data-type="goldenbox">
                     <span class="btn-icon goldenbox-icon"></span>
                     <span class="btn-label">ゴールデンボックス</span>
-                </button>
+                </button> -->
                 <button class="control-btn on" id="btn-rzk1" onclick="toggleMarkerVisibility('rzk1')" data-type="rzk1">
                     <span class="btn-icon rzk1-icon"></span>
                     <span class="btn-label">RestrictedZoneKey1</span>
@@ -28,13 +34,11 @@
                     <span class="btn-icon rzk3-icon"></span>
                     <span class="btn-label">RestrictedZoneKey3</span>
                 </button>
+                <button class="control-btn on" id="btn-goldenbox" onclick="toggleMarkerVisibility('goldenbox')" data-type="goldenbox">
+                    <span class="btn-icon goldenbox-icon"></span>
+                    <span class="btn-label">ゴールデンボックス</span>
+                </button>
             </div>
-        </div> -->
-        <!-- マップ -->
-        <div class="map-container">
-            <img id="baseMap" src="images/base-map.jpg" alt="Base Map" class="base-map">
-            <svg id="connectionsSvg" class="connections-svg"></svg>
-            <div id="markersContainer" class="markers-container"></div>
         </div>
     </div>
 

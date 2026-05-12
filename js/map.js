@@ -2,7 +2,7 @@
 const goldenBoxMarkers = [
     { id: 1, x: 14, y: 18, title: "ダストロック基地", image: "images/details/detail-1.jpg" },
     { id: 2, x: 19, y: 11, title: "インパクト・ゾーン", image: "images/details/detail-2.jpg" },
-    { id: 3, x: 28, y: 28, title: "サンドダスト庇護所（まだ画像なし）", image: "images/details/detail-3.jpg" },
+    { id: 3, x: 22, y: 26, title: "サンドダスト庇護所", image: "images/details/detail-3.jpg" },
     { id: 4, x: 10, y: 40, title: "太陽の岩", image: "images/details/detail-4.jpg" },
     { id: 5, x: 2, y: 55, title: "石湾基地", image: "images/details/detail-5.jpg" },
     { id: 6, x: 12, y: 58, title: "星の岩礁外", image: "images/details/detail-6.jpg" },
@@ -14,7 +14,7 @@ const goldenBoxMarkers = [
     { id: 12, x: 92, y: 69, title: "鉄錆の波止場", image: "images/details/detail-12.jpg" },
     { id: 13, x: 91, y: 39, title: "日の出海岸", image: "images/details/detail-13.jpg" },
     { id: 14, x: 94, y: 9, title: "飛び坂の島", image: "images/details/detail-14.jpg" },
-    { id: 15, x: 86, y: 23, title: "中継前哨基地（まだ画像なし）", image: "images/details/detail-15.jpg" },
+    { id: 15, x: 87, y: 20, title: "中継前哨基地", image: "images/details/detail-15.jpg" },
     { id: 16, x: 81, y: 21, title: "中継前哨基地室内", image: "images/details/detail-16.jpg" },
     { id: 17, x: 78, y: 16, title: "中継前哨基地北側", image: "images/details/detail-17.jpg" },
     { id: 20, x: 57, y: 14, title: "森の要塞", image: "images/details/detail-20.jpg" },
